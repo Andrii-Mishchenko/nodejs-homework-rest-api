@@ -25,3 +25,7 @@ app.use((err, _, res, __) => {
 });
 
 module.exports = app
+
+// http://localhost:3000/api/contacts
+
+// Dfkthf12
