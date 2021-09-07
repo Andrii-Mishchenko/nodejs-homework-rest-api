@@ -13,7 +13,9 @@ app.use(logger(formatsLogger));
 
 app.use(express.json())
 
-app.use('/api/contacts', api.contacts);
+app.use('/api/contacts', api.contactsRoutes);
+app.use('/api/users', api.authRoutes);
+app.use('/api/orders', api.orderRoutes);
 
 app.use((_, res) => {
   res.status(404).json({ message: 'Not found' })
@@ -26,6 +28,6 @@ app.use((err, _, res, __) => {
 
 module.exports = app
 
-// http://localhost:3000/api/contacts
+// http://localhost:3000/api/
 
 // Dfkthf12
