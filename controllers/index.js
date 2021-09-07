@@ -1,7 +1,9 @@
 const contactsCtrls = require('./contactsCtrls')
-const categoriesCtrls = require('./categoriesCtrls')
+const authCtrls = require('./authCtrls')
+const orderCtrls = require('./orderCtrls')
 
 module.exports = {
     contactsCtrls,
-    categoriesCtrls
+    authCtrls,
+    orderCtrls
 }
