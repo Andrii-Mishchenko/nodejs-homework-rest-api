@@ -12,6 +12,7 @@ const formatsLogger = app.get('env') === 'development' ? 'dev' : 'short'
 app.use(logger(formatsLogger));
 
 app.use(express.json())
+app.use(express.static('public'));
 
 app.use('/api/contacts', api.contactsRoutes);
 app.use('/api/users', api.authRoutes);
