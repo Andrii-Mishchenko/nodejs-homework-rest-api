@@ -14,6 +14,4 @@ const addOrder = async (req, res) => {
     })
 }
 
-console.log(addOrder)
-
 module.exports = addOrder;
