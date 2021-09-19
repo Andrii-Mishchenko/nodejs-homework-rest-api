@@ -20,4 +20,21 @@ mongoose.connect(DB_HOST, {
     process.exit(1)
   });
 
+//   // sendGrid
+// const sgMail = require('@sendgrid/mail');
 
+// const { SENDGRID_API_KEY } = process.env;
+
+// sgMail.setApiKey(SENDGRID_API_KEY);
+
+// const mail = {
+//     to: 'a.mishenko@rambler.ru',
+//     from: 'a.mishenko2001@gmail.com',
+//     subject: 'Регистрация на сайте',
+//     html: '<p>Регистрация прошла успешно! Поздравляем!</p>'
+// }
+
+// sgMail.send(mail)
+//     .then(() => console.log('Verification successful'))
+//     .catch(error => console.log(error.message));
+    
